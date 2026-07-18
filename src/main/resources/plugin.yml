@@ -1,0 +1,21 @@
+name: PrimeEvents
+main: com.primeevents.plugin.PrimeEvents
+version: 1.0.0
+api-version: 1.13
+author: PrimeEvents Team
+description: Zamanlanmis GiveAll etkinlik plugini + Discord webhook duyurusu
+
+commands:
+  event:
+    description: Etkinlik komutlari
+    usage: /event <gift|start|stop|reload>
+    permission: primeevents.use
+    permission-message: "&cBu komutu kullanma yetkin yok."
+
+permissions:
+  primeevents.admin:
+    description: Etkinlikleri yonetme yetkisi
+    default: op
+  primeevents.use:
+    description: Etkinlik komutlarini kullanma yetkisi
+    default: true

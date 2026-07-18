@@ -1,0 +1,57 @@
+# PrimeEvents Config
+# Tum saatler UTC'dir. Format: HH:mm  (ornek: 19:00)
+
+# Plugin-ici sabit mesajlarin (komut yardimlari, izin uyarilari vb) dili.
+# Secenekler: tr, en, br
+language: tr
+
+# true yaparsan konsola her 20 saniyede bir suanki UTC saat ve
+# ayarlanan saatler karsilastirmasi loglanir (sorun tespiti icin).
+debug: false
+
+giveall:
+  enabled: true
+  times:
+    - "19:00"
+    - "22:00"
+  broadcast-message: "&6&l[Etkinlik] &eGiveAll odulleri dagitildi!"
+  # /event gift ile acilan editor GUI'sinin basligi (sadece OP gorur/duzenler)
+  editor-title: "&8Odul Duzenleyici"
+  # ONEMLI: oduller artik BU DOSYADA degil, ayri "rewards.yml" dosyasinda tutuluyor.
+  # /event gift ile OP olarak sandiga item koyup kapattiginda otomatik olarak
+  # plugins/PrimeEvents/rewards.yml dosyasina kaydedilir, config.yml'e dokunulmaz.
+
+storage:
+  # ileride kullanilacak yardimci ayarlar icin ayrildi
+  reset-hour-utc: 0
+
+# Discord webhook ile otomatik duyuru. Ayarlanan giveall.times saatlerinde
+# discord kanalina embed (kutulu) bir mesaj dusurur.
+webhook:
+  enabled: false
+  url: "https://discord.com/api/webhooks/XXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  username: "PrimeEvents"
+  avatar-url: ""
+  # webhook her duyuru attiginda mesajin basina @everyone ekleyip ping atsin mi?
+  # not: discord kanalinda webhook'un/rolun "mention everyone" izni olmasi gerekir.
+  everyone-ping: true
+  embed:
+    title: "🎁 GiveAll Etkinligi"
+    color: "#FFD700"
+    footer: "PrimeEvents"
+    # embed'in sag ust kosesindeki kucuk resim (opsiyonel). Kendi resim linkinizi yapistirin, orn:
+    # thumbnail: "https://i.imgur.com/ornekresim.png"
+    thumbnail: ""
+    # embed'in altinda buyuk banner gorseli (opsiyonel).
+    image: ""
+  # etkinlik gerceklesmeden X dakika once ayrica bir "yaklasiyor" duyurusu atar
+  pre-announce:
+    enabled: true
+    minutes-before: 10
+    title: "⏰ Yaklasan Etkinlik"
+    message: "GiveAll etkinligine %minutes% dakika kaldi!"
+    color: "#3498DB"
+  # hangi olaylarda webhook gonderilsin
+  notify:
+    giveall-trigger: true
+    giveall-pre-announce: true

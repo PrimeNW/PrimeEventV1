@@ -1,0 +1,22 @@
+help-header: "&7--- &ePrimeEvents &7---"
+help-gift-admin: "&e/event gift &7- odul editorunu ac (OP)"
+help-give: "&e/event give &7- odulleri simdi dagit (saati beklemeden, test icin)"
+help-webhooktest: "&e/event webhooktest &7- discord webhook'unu test et"
+help-reload: "&e/event reload &7- config'i yenile"
+
+no-permission: "&cBu komutu kullanma yetkin yok."
+players-only: "&cBu komut sadece oyun ici kullanilabilir."
+unknown-subcommand: "&cBilinmeyen alt komut. /event yaz."
+
+gift-editor-opened: "&7Odulleri sandiga koy, cikinca otomatik kaydedilir."
+gift-editor-saved: "&aGiveAll odulleri kaydedildi. &7(%count% item)"
+gift-editor-empty-skip: "&cEnvanter bostu, kayit iptal edildi - onceki oduller korundu. Item eklemeden kapatirsan hicbir sey degismez."
+
+config-reloaded: "&aConfig yenilendi."
+giveall-no-rewards-warning: "GiveAll tetiklendi ama /event gift ile odul ayarlanmamis, hicbir sey dagitilmadi."
+giveall-give-empty: "&cOnce /event gift ile en az 1 odul ekle."
+giveall-give-done: "&aOduller (%count% item) online oyunculara dagitildi."
+
+webhook-disabled: "&cwebhook.enabled: false, once config.yml'de acmalisin."
+webhook-testing: "&7Webhook test ediliyor..."
+webhook-test-result: "&7Sonuc: %result%"

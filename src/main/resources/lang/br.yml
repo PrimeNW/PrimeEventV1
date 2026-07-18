@@ -1,0 +1,22 @@
+help-header: "&7--- &ePrimeEvents &7---"
+help-gift-admin: "&e/event gift &7- abre o editor de recompensas (OP)"
+help-give: "&e/event give &7- distribui as recompensas agora (teste, ignora o horario)"
+help-webhooktest: "&e/event webhooktest &7- testa o webhook do discord"
+help-reload: "&e/event reload &7- recarrega a config"
+
+no-permission: "&cVoce nao tem permissao para usar este comando."
+players-only: "&cEste comando so pode ser usado no jogo."
+unknown-subcommand: "&cSubcomando desconhecido. Digite /event."
+
+gift-editor-opened: "&7Coloque as recompensas no bau, elas salvam automaticamente ao fechar."
+gift-editor-saved: "&aRecompensas do GiveAll salvas. &7(%count% itens)"
+gift-editor-empty-skip: "&cO bau estava vazio, salvamento cancelado - recompensas anteriores mantidas. Fechar sem adicionar itens nao muda nada."
+
+config-reloaded: "&aConfig recarregada."
+giveall-no-rewards-warning: "GiveAll foi acionado mas nenhuma recompensa foi definida via /event gift, nada foi distribuido."
+giveall-give-empty: "&cAdicione pelo menos 1 recompensa via /event gift primeiro."
+giveall-give-done: "&aRecompensas (%count% itens) distribuidas aos jogadores online."
+
+webhook-disabled: "&cwebhook.enabled esta false, ative no config.yml primeiro."
+webhook-testing: "&7Testando webhook..."
+webhook-test-result: "&7Resultado: %result%"

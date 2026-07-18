@@ -1,0 +1,22 @@
+help-header: "&7--- &ePrimeEvents &7---"
+help-gift-admin: "&e/event gift &7- open the reward editor (OP)"
+help-give: "&e/event give &7- distribute rewards now (for testing, skips the schedule)"
+help-webhooktest: "&e/event webhooktest &7- test the discord webhook"
+help-reload: "&e/event reload &7- reload the config"
+
+no-permission: "&cYou don't have permission to use this command."
+players-only: "&cThis command can only be used in-game."
+unknown-subcommand: "&cUnknown subcommand. Type /event."
+
+gift-editor-opened: "&7Put rewards in the chest, they save automatically when you close it."
+gift-editor-saved: "&aGiveAll rewards saved. &7(%count% items)"
+gift-editor-empty-skip: "&cThe chest was empty, save skipped - previous rewards were kept. Closing without adding items changes nothing."
+
+config-reloaded: "&aConfig reloaded."
+giveall-no-rewards-warning: "GiveAll triggered but no rewards set via /event gift, nothing was distributed."
+giveall-give-empty: "&cAdd at least 1 reward via /event gift first."
+giveall-give-done: "&aRewards (%count% items) distributed to online players."
+
+webhook-disabled: "&cwebhook.enabled is false, enable it in config.yml first."
+webhook-testing: "&7Testing webhook..."
+webhook-test-result: "&7Result: %result%"
